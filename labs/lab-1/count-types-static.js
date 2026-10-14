@@ -1,0 +1,17 @@
+'use strict'
+
+const arr = [1, '626', true, 'bye', 32, false, 'John', -21];
+let type;
+
+const collection = {
+    number: 0,
+    string: 0, 
+    boolean: 0
+}
+
+for (const elements of arr) {
+   type = typeof elements;
+   collection[type]++;
+}
+
+console.dir(collection);
