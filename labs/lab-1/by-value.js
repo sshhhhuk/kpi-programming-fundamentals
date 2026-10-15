@@ -1,12 +1,9 @@
-'use strict'
+'use strict';
 
+const a = 5;
 
-let a = 5;
+const inc = (a) => ++a;
 
-const inc = (a) => {
-    return ++a;
-}
+const b = inc(a);
 
-let b = inc(a);
-
-console.dir({a, b});
+console.dir({ a, b });
